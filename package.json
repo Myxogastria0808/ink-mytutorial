@@ -8,8 +8,9 @@
   ],
   "type": "module",
   "scripts": {
+    "dev": "tsx src/cli.tsx",
     "build": "tsc",
-    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
     "test": "vitest run --typecheck",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
@@ -28,6 +29,7 @@
     "ink-testing-library": "^3.0.0",
     "oxfmt": "^0.44.0",
     "oxlint": "^1.59.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.0.3",
     "vitest": "^4.1.4"
   },
