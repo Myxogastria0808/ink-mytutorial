@@ -1,3 +1,7 @@
 # Nix
 .direnv/
 
+# javaScript
+node_modules/
+dist/
+
