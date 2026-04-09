@@ -1,13 +1,44 @@
-import { Text } from 'ink';
+import {
+  MyText,
+  MyBox,
+  MyNewLine,
+  MySpacer,
+  MyStatic,
+  MyTransform,
+  MyUseInput,
+  MyUsePaste,
+  MyUseStdin,
+  MyUseStdout,
+  MyUseStderr,
+  MyUseStdoutWrite,
+  MyUseStderrWrite,
+  MyUseWindowSize,
+  MyUseCursor,
+  MyUseAnimation,
+} from './libs/index.js';
 
-type Props = {
-  name: string | undefined;
+const App = () => {
+  return (
+    <>
+      <MyText />
+      <MyBox />
+      <MyNewLine />
+      <MySpacer />
+      <MyStatic />
+      <MyTransform />
+      <MyUseInput />
+      <MyUsePaste />
+      <MyUseStdin />
+      <MyUseStdout />
+      <MyUseStderr />
+      <MyUseStdoutWrite />
+      <MyUseStderrWrite />
+      <MyUseWindowSize />
+      <MyUseCursor />
+      <MyUseAnimation />
+    </>
+  );
 };
 
-export default function App({ name = 'Stranger' }: Props) {
-  return (
-    <Text>
-      Hello, <Text color="green">{name}</Text>
-    </Text>
-  );
-}
+export default App;
+
